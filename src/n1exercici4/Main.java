@@ -8,19 +8,9 @@ public class Main {
 		
 		GenericMethods objecte1 = new GenericMethods();
 		
-		ArrayList<String> array1 = new ArrayList<String>();
-		ArrayList<Integer> array2 = new ArrayList<Integer>();
-		ArrayList<Nova> array3 = new ArrayList<Nova>();
-		
-		array1.add("hola");
-		array2.add(2);
-		
-		Nova nou = new Nova();		
-		array3.add(nou);
-		
-		objecte1.f(array1);
-		objecte1.f(array2);
-		objecte1.f(array3);			
+		objecte1.f("un");
+		objecte1.f("un", "dos");
+		objecte1.f(new Nova(), "dos", 3, 4.0F);
 		
 	}
 
@@ -31,7 +21,7 @@ class Nova{
 
 	@Override
 	public String toString() {
-		return "Objecte de la clase Nova";
+		return "ClaseNova";
 	}
 	
 }
